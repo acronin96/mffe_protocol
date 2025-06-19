@@ -37,7 +37,7 @@ segment_if_does_not_exist() {
   local file="$1"
   local contrast="$2"
   # Update global variable with segmentation file name
-  FILESEG="${file}_seg"
+  FILESEG="${file}_T2starw_seg"
   FILESEGJSON="${PATH_DATA_PROCESSED}/derivatives/${SUBJECT}/anat/${FILESEG}.json"
   FILESEGMANUAL="${PATH_DATA_PROCESSED}/derivatives/${SUBJECT}/anat/${FILESEG}-manual.nii.gz"
   FILE_OUTPUT="${PATH_DATA_PROCESSED}/derivatives/${SUBJECT}/anat/${FILESEG}.nii.gz"
@@ -63,7 +63,7 @@ segment_gm_if_does_not_exist() {
   ###
   local file="$1"
   # Update global variable with segmentation file name
-  FILESEG="${file}_gmseg"
+  FILESEG="${file}_T2starw_gmseg"
   FILESEGJSON="${PATH_DATA_PROCESSED}/derivatives/${SUBJECT}/anat/${FILESEG}.json"
   FILESEGMANUAL="${PATH_DATA_PROCESSED}/derivatives/${SUBJECT}/anat/${FILESEG}-manual.nii.gz"
   FILE_OUTPUT="${PATH_DATA_PROCESSED}/derivatives/${SUBJECT}/anat/${FILESEG}.nii.gz"
